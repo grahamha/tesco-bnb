@@ -47,12 +47,12 @@ class Map extends Component {
         if (this.props.activeStore != null) {
             if (marker.key === this.props.activeStore.id) {
                 return {
-                    url: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+                    url: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png'
                 };
             }
         }
         return {
-            url: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
+            url: 'https://maps.google.com/mapfiles/ms/icons/red-dot.png'
         };
     }
 
