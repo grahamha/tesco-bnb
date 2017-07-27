@@ -1,10 +1,11 @@
-/* @import url('https://fonts.googleapis.com/css?family=Signika');
+@import url('https://fonts.googleapis.com/css?family=Signika');
 
 body {
   font-family: 'Signika', sans-serif;
   font-size: 20px;
   line-height: 24px;
   color: #666666;
+  margin: 0;
 }
 
 .container {
@@ -122,4 +123,4 @@ a {
 
 .no-padding {
   padding: 0 !important;
-} */ 
+} */
