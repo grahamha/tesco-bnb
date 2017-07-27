@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Signika');
+
+body {
+  font-family: 'Signika', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  color: #666666;
+}
+
+.container {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.stores {
+  flex: 1; 
+}
+
+.stores-content {
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.stores-link {
+  display: block;
+  padding: 20px;
+  color: #666;
+  text-decoration: none;
+}
+
+.stores-link__heading {
+  padding: 0 0 20px;
+  margin: 0;
+}
+
+.stores-link__name {
+  color: #00539F;
+  font-weight: bold;
+}
+
+.stores-link__category {
+  color: #E52922;
+}
+
+.stores-link:nth-child(even) {
+  background-color: #F6F6F6;
+}
+
+.stores-link--active {
+  background-color: #00539F !important;  
+  color: #fff;
+} 
+
+.stores-link--active .stores-link__name {
+  color: #fff;
+}
+
+.stores-link--active .stores-link__category {
+  color: #fff;
+}
+
+.map {
+  flex: 2; 
+}
+
+.address__line {
+  margin: 0;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* shit unfactored css below */
+/* 
+input[type=text] {
+  font-size: 20px;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 15px;
+  font-size: 20px;
+  line-height: 42px;
+}
+
+a {
+  color: #767676;
+  text-decoration: none;
+}
+
+
+
+
+.opening-hours {
+  margin: 10px 0;
+}
+.opening-hours p {
+  margin: 0;
+}
+
+#root,
+.fill {
+  height: 100%;
+  min-height: 100%;
+}
+
+.store {
+ 
+  margin: 20px;
+  padding: 20px;
+}
+
+.store-list {
+  max-height: 100vh;
+  overflow: auto;
+}
+
+.no-padding {
+  padding: 0 !important;
+} */
