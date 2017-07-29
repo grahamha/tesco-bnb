@@ -4,7 +4,7 @@ body {
   font-family: 'Signika', sans-serif;
   font-size: 20px;
   line-height: 24px;
-  color: #666666;
+  color: #666;
   margin: 0;
 }
 
@@ -27,8 +27,12 @@ body {
 }
 
 .stores-link {
+  padding: 20px 20px 0;
+  text-decoration: none;
+}
+
+.stores-link__link {
   display: block;
-  padding: 20px;
   color: #666;
   text-decoration: none;
 }
@@ -56,12 +60,25 @@ body {
   color: #fff;
 } 
 
-.stores-link--active .stores-link__name {
+.stores-link--active .stores-link__link,
+.stores-link--active .stores-link__name,
+.stores-link--active .stores-link__category,
+.stores-link--active .facilities__heading,
+.stores-link--active .opening-hours__title {
   color: #fff;
 }
 
-.stores-link--active .stores-link__category {
-  color: #fff;
+.stores-link--active .stores-link__svg {
+  fill: #fff;
+}
+
+.stores-link__svg-container {
+  text-align: center;
+}
+
+.stores-link__svg {
+  fill: #666;
+  width: 50px;
 }
 
 .map {
@@ -74,53 +91,49 @@ body {
   line-height: 22px;
 }
 
-/* shit unfactored css below */
-/* 
-input[type=text] {
-  font-size: 20px;
-  padding: 10px;
-  font-family: 'Roboto', sans-serif;
+.store-detail {
+  flex: 1;
+  display: none;
+  font-size: 16px;
+  line-height: 20px;
+  padding-bottom: 20px;
 }
 
-button {
-  font-family: 'Roboto', sans-serif;
-  margin: 0 15px;
-  font-size: 20px;
-  line-height: 42px;
+.store-detail--active {
+  display: block;
+     -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+
+    
+    font-size: 18px;
+    line-height: 22px;
+}
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}  
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
 }
 
-a {
-  color: #767676;
-  text-decoration: none;
+.facilities__heading,
+.opening-hours__title {
+  color: #E52922;
+  margin: 0 0 5px;
 }
 
-
-
-
-.opening-hours {
-  margin: 10px 0;
+.opening-hours__table {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
-.opening-hours p {
+.facilities__list {
+  font-size: 16px;
+  line-height: 20px;
   margin: 0;
 }
 
-#root,
-.fill {
-  height: 100%;
-  min-height: 100%;
+.opening-hours__hour-line {
+  margin: 0;
 }
-
-.store {
- 
-  margin: 20px;
-  padding: 20px;
-}
-
-.store-list {
-  max-height: 100vh;
-  overflow: auto;
-}
-
-.no-padding {
-  padding: 0 !important;
-} */

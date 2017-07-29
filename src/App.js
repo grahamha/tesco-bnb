@@ -68,13 +68,20 @@ class App extends Component {
     }
 
     mapStoreSelected(marker) {
-        const store = _.find(this.state.stores, (s) => s.location.id === marker.key);
+        if (marker) {
+            const store = _.find(this.state.stores, (s) => s.location.id === marker.key);
 
-        if (typeof store !== 'undefined') {
+            if (typeof store !== 'undefined') {
+                this.setState({
+                    activeStore: store.location
+                });
+            }
+        } else {
             this.setState({
-                activeStore: store.location
-            });
+                activeStore: null
+            })
         }
+        
     }
 
     render() {
@@ -85,6 +92,7 @@ class App extends Component {
                     storeSelected={this.setActiveStore} 
                     activeStore={this.state.activeStore} 
                 />   
+               
                 <Map
                     selected={this.mapStoreSelected}
                     activeStore={this.state.activeStore} 

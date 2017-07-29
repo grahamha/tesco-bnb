@@ -24,9 +24,10 @@ class OpeningHoursLine extends Component {
 
     render() {
         return (
-            <p>
-                {this.props.day}: {this.getHours()}
-            </p>
+            <tr className="opening-hours__hour-line">
+                <td>{this.props.day}:</td>
+                <td>{this.getHours()}</td>
+            </tr>
         );
     }
 }

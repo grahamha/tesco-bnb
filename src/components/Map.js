@@ -60,6 +60,10 @@ class Map extends Component {
         this.props.selected(marker);
     }
 
+    onMouseOut() {
+        this.props.selected(null);
+    }
+
     render() {
         return (
             <GoogleMap
@@ -74,7 +78,8 @@ class Map extends Component {
             >
                 {this.props.markers.map((marker, index) => (
                     <Marker {...marker} 
-                        onClick={this.onMouseOver.bind(this, marker)}
+                        onMouseOver={this.onMouseOver.bind(this, marker)}
+                        onMouseOut={this.onMouseOut.bind(this)}
                         icon={this.getMarker(marker)}
                     />
                 ))}
