@@ -83,6 +83,14 @@ body {
 
 .map {
   flex: 2; 
+  position: relative;
+}
+.map__canvas {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .address__line {

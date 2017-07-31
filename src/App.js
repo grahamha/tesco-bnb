@@ -97,7 +97,7 @@ class App extends Component {
                     selected={this.mapStoreSelected}
                     activeStore={this.state.activeStore} 
                     containerElement={<div className="map"></div>}
-                    mapElement={<div style={{ height: '100%' }}></div>} 
+                    mapElement={<div className="map__canvas"></div>} 
                     markers={this.getMapMarkers()}
                     findStore={this.findStore.bind(this)}
                 />                
